@@ -28,29 +28,29 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   # it is required by NMatrix, yet we want to specify clearly which minimal version is OK
-  spec.add_runtime_dependency 'packable', '~> 1.3.13'
+  spec.add_runtime_dependency 'packable', '~> 1.3.14'
 
-  spec.add_development_dependency 'spreadsheet', '~> 1.1.1'
-  spec.add_development_dependency 'bundler', '>= 1.10'
-  spec.add_development_dependency 'rake', '~>13.0'
-  spec.add_development_dependency 'pry', '~> 0.10'
+  spec.add_development_dependency 'spreadsheet', '~> 1.2.6'
+  spec.add_development_dependency 'bundler', '>= 2.1.4'
+  spec.add_development_dependency 'rake', '~>13.0.1'
+  spec.add_development_dependency 'pry', '~> 0.13.1'
   spec.add_development_dependency 'pry-byebug'
-  spec.add_development_dependency 'rserve-client', '~> 0.3'
-  spec.add_development_dependency 'rspec', '~> 3.4'
+  spec.add_development_dependency 'rserve-client', '~> 0.3.5'
+  spec.add_development_dependency 'rspec', '~> 3.9'
   spec.add_development_dependency 'rspec-its'
   spec.add_development_dependency 'awesome_print'
-  spec.add_development_dependency 'nyaplot', '~> 0.1.5'
-  spec.add_development_dependency 'nmatrix', '~> 0.2.1' if ENV['DARU_TEST_NMATRIX']
-  spec.add_development_dependency 'distribution', '~> 0.7'
-  spec.add_development_dependency 'gsl', '~>2.1.0.2' if ENV['DARU_TEST_GSL']
+  spec.add_development_dependency 'nyaplot', '~> 0.1.6'
+  spec.add_development_dependency 'nmatrix', '~> 0.2.4' if ENV['DARU_TEST_NMATRIX']
+  spec.add_development_dependency 'distribution', '~> 0.8'
+  spec.add_development_dependency 'gsl', '~>2.1.0.3' if ENV['DARU_TEST_GSL']
   spec.add_development_dependency 'dbd-sqlite3'
   spec.add_development_dependency 'dbi'
   spec.add_development_dependency 'activerecord', '~> 6.0'
   spec.add_development_dependency 'mechanize'
   # issue : https://github.com/SciRuby/daru/issues/493 occured 
   # with latest version of sqlite3
-  spec.add_development_dependency  'sqlite3'
-  spec.add_development_dependency 'rubocop', '~> 0.49.0'
+  spec.add_development_dependency 'sqlite3'
+  spec.add_development_dependency 'rubocop', '~> 0.90.0'
   spec.add_development_dependency 'ruby-prof'
   spec.add_development_dependency 'simplecov'
   spec.add_development_dependency 'gruff'
